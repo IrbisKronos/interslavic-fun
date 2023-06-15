@@ -70,7 +70,7 @@ Suffixes starting with **\-o-** change to **\-e-** when following a soft consona
 
 #### Adjective to adjective
 
-* For comparatives and superlatives, see under _[adjectives](../grammar/adjectives.md#comparison)_
+* For comparatives and superlatives, see under _[adjectives](../grammar/orthography.md#etymological-alphabet)_
 * To change the meaning of an adjective into the opposite, use the prefix **ne-**:  
 **dobry** „good” > **nedobry** „not good”
 * To intensify the meaning of an adjective, the prefix **prě-**, meaning „very” or „too” can be used:  
