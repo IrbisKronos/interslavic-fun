@@ -1,3 +1,0 @@
-# Orthography
-
-## Etymological alphabet
