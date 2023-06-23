@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://IrbisKronos.github.io/interslavic-fun/blog</id>
-    <title>My Site Blog</title>
+    <title>Interslavic Blog</title>
     <updated>2021-08-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://IrbisKronos.github.io/interslavic-fun/blog"/>
-    <subtitle>My Site Blog</subtitle>
+    <subtitle>Interslavic Blog</subtitle>
     <icon>https://IrbisKronos.github.io/interslavic-fun/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
