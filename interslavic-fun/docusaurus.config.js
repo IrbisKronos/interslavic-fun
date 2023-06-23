@@ -36,7 +36,6 @@ const config = {
         label: "EN",
         htmlLang: 'en-GB',
       },
-      // You can omit a locale (e.g. fr) if you don't need to override the defaults
       uk: {
         label: 'UA',
         htmlLang: 'uk',

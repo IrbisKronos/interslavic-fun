@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "Interslavic",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Interslavic Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Learn": {
+    "message": "Learn",
+    "description": "Navbar item with label Learn"
+  },
+  "item.label.Articles": {
+    "message": "Articles",
+    "description": "Navbar item with label Articles"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}
