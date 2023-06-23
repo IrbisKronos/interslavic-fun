@@ -1,0 +1,996 @@
+From 13605805d9ed9d3a8c2f42b547cf85d3618f57bc Mon Sep 17 00:00:00 2001
+From: Yaroslav Serhieiev <noomorph@gmail.com>
+Date: Fri, 23 Jun 2023 09:39:07 +0300
+Subject: [PATCH] docs: fix docs
+
+---
+ interslavic-fun/docs/grammar/_category_.json  |  7 ++-
+ interslavic-fun/docs/grammar/adjectives.md    |  9 ++-
+ interslavic-fun/docs/grammar/conjunctions.md  |  8 +++
+ interslavic-fun/docs/grammar/nouns.mdx        | 20 ++++---
+ interslavic-fun/docs/grammar/numerals.md      |  8 +++
+ interslavic-fun/docs/grammar/prepositions.md  |  8 +++
+ interslavic-fun/docs/grammar/pronouns.md      |  8 +++
+ interslavic-fun/docs/grammar/simplified/1.mdx |  1 -
+ interslavic-fun/docs/grammar/syntax.md        |  8 +++
+ interslavic-fun/docs/grammar/verbs.md         |  9 ++-
+ .../constructed-slavic-languages.mdx          |  5 ++
+ .../design-criteria.mdx                       | 13 ++---
+ .../faq.mdx                                   | 17 +++---
+ .../history.mdx                               | 14 ++---
+ .../index.mdx}                                | 13 ++---
+ .../docs/letter-and-sounds/_category_.json    |  8 ---
+ .../{letter-and-sounds => }/orthography.mdx   | 28 +++++----
+ .../{letter-and-sounds => }/phonology.mdx     | 57 ++++++++++---------
+ .../{letter-and-sounds => }/pronunciation.mdx | 20 +++----
+ .../_category_.json                           |  7 ---
+ .../interslavic-at-wikipedia.mdx              |  6 --
+ .../pan-slavic-language-projects.mdx          |  5 --
+ .../publications-about-interslavic.mdx        |  6 --
+ .../docs/vocabulary/_category_.json           |  4 ++
+ .../derivation.mdx}                           | 10 +++-
+ .../flavourisation.mdx}                       |  6 +-
+ .../word-formation.mdx}                       |  6 +-
+ interslavic-fun/docusaurus.config.js          | 18 +++---
+ interslavic-fun/sidebars.js                   |  2 +-
+ interslavic-fun/src/css/custom.css            | 23 ++++++++
+ interslavic-fun/src/pages/index.js            |  2 +-
+ 31 files changed, 209 insertions(+), 147 deletions(-)
+ create mode 100644 interslavic-fun/docs/grammar/conjunctions.md
+ create mode 100644 interslavic-fun/docs/grammar/numerals.md
+ create mode 100644 interslavic-fun/docs/grammar/prepositions.md
+ create mode 100644 interslavic-fun/docs/grammar/pronouns.md
+ delete mode 100644 interslavic-fun/docs/grammar/simplified/1.mdx
+ create mode 100644 interslavic-fun/docs/grammar/syntax.md
+ create mode 100644 interslavic-fun/docs/introduction/constructed-slavic-languages.mdx
+ rename interslavic-fun/docs/{publications-about-interslavic => introduction}/design-criteria.mdx (96%)
+ rename interslavic-fun/docs/{publications-about-interslavic => introduction}/faq.mdx (97%)
+ rename interslavic-fun/docs/{publications-about-interslavic => introduction}/history.mdx (86%)
+ rename interslavic-fun/docs/{publications-about-interslavic/introduction.mdx => introduction/index.mdx} (97%)
+ delete mode 100644 interslavic-fun/docs/letter-and-sounds/_category_.json
+ rename interslavic-fun/docs/{letter-and-sounds => }/orthography.mdx (95%)
+ rename interslavic-fun/docs/{letter-and-sounds => }/phonology.mdx (94%)
+ rename interslavic-fun/docs/{letter-and-sounds => }/pronunciation.mdx (86%)
+ delete mode 100644 interslavic-fun/docs/publications-about-interslavic/_category_.json
+ delete mode 100644 interslavic-fun/docs/publications-about-interslavic/interslavic-at-wikipedia.mdx
+ delete mode 100644 interslavic-fun/docs/publications-about-interslavic/pan-slavic-language-projects.mdx
+ delete mode 100644 interslavic-fun/docs/publications-about-interslavic/publications-about-interslavic.mdx
+ create mode 100644 interslavic-fun/docs/vocabulary/_category_.json
+ rename interslavic-fun/docs/{use/derivation.md => vocabulary/derivation.mdx} (94%)
+ rename interslavic-fun/docs/{use/flavourisation.md => vocabulary/flavourisation.mdx} (96%)
+ rename interslavic-fun/docs/{use/word-formation.md => vocabulary/word-formation.mdx} (99%)
+
+diff --git a/interslavic-fun/docs/grammar/_category_.json b/interslavic-fun/docs/grammar/_category_.json
+index 729d3d3..43cd92a 100644
+--- a/interslavic-fun/docs/grammar/_category_.json
++++ b/interslavic-fun/docs/grammar/_category_.json
+@@ -1,8 +1,9 @@
+ {
+     "label": "Grammar",
+-    "position": 3,
++    "position": 5,
+     "link": {
+-      "type": "generated-index"
++      "type": "generated-index",
++      "slug": "/grammar",
++      "description": "Interslavic is a natural and very broadly understandable language for Slavs. It is entirely based on forms common to the Slavic languages, and when no common forms exist, on majority solutions. It has grammatical gender, six cases plus an optional vocative, verbal aspect and full conjugation – things that virtually every Slav is familiar with. In addition, it also contains some material that is absent in most Slavic languages, but knowledge of which can be of great help in understanding the languages that use it. Compared to the natural Slavic languages, this grammar model is still fairly simple and regular. Exceptions are rare and most irregularity is eliminated with means provided by the Slavic languages themselves, without introducing any artificiality. This grammar model is primarily intended for communication between Slavs of different nationalities, but can of course also be used by non-Slavs who want to be able to communicate on a more serious level. It is suitable for contacts and publications, but also as a means to gain insight into the nature of Slavic."
+     }
+   }
+-  
+\ No newline at end of file
+diff --git a/interslavic-fun/docs/grammar/adjectives.md b/interslavic-fun/docs/grammar/adjectives.md
+index 55fdda7..9835f90 100644
+--- a/interslavic-fun/docs/grammar/adjectives.md
++++ b/interslavic-fun/docs/grammar/adjectives.md
+@@ -1 +1,8 @@
+-# filename
+\ No newline at end of file
++---
++sidebar_position: 2
++license: republish
++author: Jan van Steenbergen
++origin: http://steen.free.fr/interslavic/adjectives.html
++---
++
++# Adjectives
+diff --git a/interslavic-fun/docs/grammar/conjunctions.md b/interslavic-fun/docs/grammar/conjunctions.md
+new file mode 100644
+index 0000000..7df8159
+--- /dev/null
++++ b/interslavic-fun/docs/grammar/conjunctions.md
+@@ -0,0 +1,8 @@
++---
++sidebar_position: 7
++license: republish
++author: Jan van Steenbergen
++origin: http://steen.free.fr/interslavic/TODO
++---
++
++# Conjunctions
+diff --git a/interslavic-fun/docs/grammar/nouns.mdx b/interslavic-fun/docs/grammar/nouns.mdx
+index 44bc695..3dc5053 100644
+--- a/interslavic-fun/docs/grammar/nouns.mdx
++++ b/interslavic-fun/docs/grammar/nouns.mdx
+@@ -1,6 +1,10 @@
+ ---
+ sidebar_position: 1
++license: republish
++author: Jan van Steenbergen
++origin: http://steen.free.fr/interslavic/nouns.html
+ ---
++
+ import Endings from '../partials/_endings.mdx';
+ import DeclensionOfMasculineNouns from '../partials/_declensionOfMasculineNouns.mdx';
+ import DeclensionOfNeuterNouns from '../partials/_declensionOfNeuterNouns.mdx';
+@@ -32,7 +36,7 @@ The basic endings are displayed in the table below. The forms between brackets a
+ 
+ In the dictionary, only the gender of words is given. For that reason the examples below are grouped by gender and not by declension.
+ 
+-## Declension of masculine nouns _(`Sklanjanje imennikov mužskogo roda`)_
++## Declension of masculine nouns
+ 
+ Virtually all masculine nouns end in a consonant. Basically, there is only one declensional pattern for masculine nouns, but a few things need to be remembered:
+ 
+@@ -53,12 +57,12 @@ Notes:
+ *   Words on **\-`anin`** lose the morpheme **\-`in`-** in the plural: nom.sg. _`Slovjanin`_, gen.sg. _`Slovjanina`_, but: nom.pl. _`Slovjani`_, gen.pl. _`Slovjanov`_.
+ *   There are a few words on **\-`a`** denoting male persons, such as _`sluga`_ „servant”, _`kolega`_ „colleague”, _`sudja`_ „judge”, etc. In the plural these are inflected like _`brat`_ or _`muž`_, but in the singular, they follow the pattern of the [second declension](#feminine_declension).
+ 
+-## Declension of neuter nouns _(`Sklanjanje imennikov srědnjego roda`)_
++## Declension of neuter nouns
+ 
+ Neuter nouns end in **\-`o`** (hard stems) or **\-`e`** (soft stems). Except for the nominative/accusative and the genitive plural, their inflection is identical to that of [inanimate masculine nouns](#masculine_declension). Please note:
+ 
+ *   The accusative is always identical to the nominative.
+-*   The nominative/accusative and instrumental singular are affected by the [o/e rule](phonology.html#o).
++*   The nominative/accusative and instrumental singular are affected by the [o/e rule](phonology.mdx#o).
+ *   As for the locative singular, what goes for masculine nouns goes also for neuter nouns: instead of **\-u**, it is also possible to write **\-`ě`** after a hard consonant or **\-`i`** after a soft consonant.
+ *   Neuter nouns do not have a vocative separate from the nominative.
+ *   In the genitive plural, neuter nouns of the first declension have a zero ending **\-`Ø`**. In cases when this leads to impossible consonant clusters, an **\-`e`-** is inserted before **\-`j`** or after a soft consonant, or an **\-`o`-** between hard consonants: _okn-o > :notr[ok**o**n]_, _`morj-e` > :notr[mor**e**j]_.
+@@ -75,7 +79,7 @@ For the rest, declension is always regular. Three examples: **`slovo`** „word
+ 
+ <DeclensionOfNeuterNouns />
+ 
+-## Declension of feminine nouns _(`Sklanjanje imennikov ženskogo roda`)_
++## Declension of feminine nouns
+ 
+ Most feminine nouns have the ending **\-`a`** and therefore belong to the second declension. Again, we distinguish between hard and soft stems. In the case of feminine nouns the differences between hard and soft declension are not merely a matter of applying the o/e rule. As a rule, the endings **\-`y`** and **\-`ě`** after a hard consonant become **\-`e`** and **\-`i`** after a soft consonant (in other words, they are „reversed”).
+ 
+@@ -91,7 +95,7 @@ Examples: **`žena`** „woman”, **`zemja`** „earth”, **`kost`** „bone
+ 
+ <DeclensionOfFeminineNouns />
+ 
+-## Athematic declension _(`Atematično sklonjenje`)_
++## Athematic declension
+ 
+ Except for the regular declensions listed above, Old Church Slavonic also had another declension type, the so-called **athematic declension**. Nouns of this type have gone various ways in the modern Slavic languages, mostly merging into one or more of the regular declension types. Interslavic projects choose various approaches to this group, but some of them preserve it.
+ 
+@@ -114,7 +118,7 @@ The entire athematic declension can be avoided by inflecting these words accordi
+ *   **`crkov`** is inflected like _`kost`_ (gen. _`crkvi`_); instead of **`crkov`**, it is also possible to use the form **`crkva`**, which is inflected lke _`žena`_ (gen. _`crkvy`_, dat. _`crkvě`_)
+ *   **`mati`** is inflected like _`kost`_: gen./dat. _`materi`_
+ 
+-## Irregular nouns _(Neregularne imenniky)_
++## Irregular nouns
+ 
+ Interslavic is kept as regular as possible, but a few cases of irregularity cannot be avoided without defying naturalism. The following nouns have an irregular plural (all four inflected like a feminine noun of the **`kost`** type):
+ 
+@@ -125,6 +129,6 @@ Interslavic is kept as regular as possible, but a few cases of irregularity cann
+ 
+ Regular plurals (**`člověki`**, **`oka`** etc.) can be used as well, but some of them sound very strange to the Slavic ear, even though they will be understood anyway.
+ 
+-## Indeclinable nouns _(Nesklanjane imenniky)_
++## Indeclinable nouns
+ 
+-Borrowed international vocabulary ending in **\-`e`**, **\-`i`** or **\-`u`** (f.ex. _`alibi`, `hobi`, `intervju`, `kafe`, `kakao`, `kliše`, `menju`, `tabu`, `taksi`_) and abbreviations are indeclinable. It is not impossible to add case endings anyway, but in that case it is best to separate them from the noun with an apostrophe: **`togo alibi’a, te intervju’y, tyh taksi’ov`** itd.
+\ No newline at end of file
++Borrowed international vocabulary ending in **\-`e`**, **\-`i`** or **\-`u`** (f.ex. _`alibi`, `hobi`, `intervju`, `kafe`, `kakao`, `kliše`, `menju`, `tabu`, `taksi`_) and abbreviations are indeclinable. It is not impossible to add case endings anyway, but in that case it is best to separate them from the noun with an apostrophe: **`togo alibi’a, te intervju’y, tyh taksi’ov`** itd.
+diff --git a/interslavic-fun/docs/grammar/numerals.md b/interslavic-fun/docs/grammar/numerals.md
+new file mode 100644
+index 0000000..c50c24e
+--- /dev/null
++++ b/interslavic-fun/docs/grammar/numerals.md
+@@ -0,0 +1,8 @@
++---
++sidebar_position: 4
++license: republish
++author: Jan van Steenbergen
++origin: http://steen.free.fr/interslavic/numerals.html
++---
++
++# Numerals
+diff --git a/interslavic-fun/docs/grammar/prepositions.md b/interslavic-fun/docs/grammar/prepositions.md
+new file mode 100644
+index 0000000..675a169
+--- /dev/null
++++ b/interslavic-fun/docs/grammar/prepositions.md
+@@ -0,0 +1,8 @@
++---
++sidebar_position: 6
++license: republish
++author: Jan van Steenbergen
++origin: http://steen.free.fr/interslavic/conjunctions.html
++---
++
++# Prepositions
+diff --git a/interslavic-fun/docs/grammar/pronouns.md b/interslavic-fun/docs/grammar/pronouns.md
+new file mode 100644
+index 0000000..d1fef53
+--- /dev/null
++++ b/interslavic-fun/docs/grammar/pronouns.md
+@@ -0,0 +1,8 @@
++---
++sidebar_position: 3
++license: republish
++author: Jan van Steenbergen
++origin: http://steen.free.fr/interslavic/pronouns.html
++---
++
++# Pronouns
+diff --git a/interslavic-fun/docs/grammar/simplified/1.mdx b/interslavic-fun/docs/grammar/simplified/1.mdx
+deleted file mode 100644
+index 55fdda7..0000000
+--- a/interslavic-fun/docs/grammar/simplified/1.mdx
++++ /dev/null
+@@ -1 +0,0 @@
+-# filename
+\ No newline at end of file
+diff --git a/interslavic-fun/docs/grammar/syntax.md b/interslavic-fun/docs/grammar/syntax.md
+new file mode 100644
+index 0000000..242ba97
+--- /dev/null
++++ b/interslavic-fun/docs/grammar/syntax.md
+@@ -0,0 +1,8 @@
++---
++sidebar_position: 8
++license: republish
++author: Jan van Steenbergen
++origin: http://steen.free.fr/interslavic/syntax.html
++---
++
++# Syntax
+diff --git a/interslavic-fun/docs/grammar/verbs.md b/interslavic-fun/docs/grammar/verbs.md
+index 77a72b6..e1ca311 100644
+--- a/interslavic-fun/docs/grammar/verbs.md
++++ b/interslavic-fun/docs/grammar/verbs.md
+@@ -1,3 +1,8 @@
+-# filename
++---
++sidebar_position: 5
++license: republish
++author: Jan van Steenbergen
++origin: http://steen.free.fr/interslavic/verbs.html
++---
+ 
+-#### Participles and gerund
+\ No newline at end of file
++# Verbs
+diff --git a/interslavic-fun/docs/introduction/constructed-slavic-languages.mdx b/interslavic-fun/docs/introduction/constructed-slavic-languages.mdx
+new file mode 100644
+index 0000000..700c265
+--- /dev/null
++++ b/interslavic-fun/docs/introduction/constructed-slavic-languages.mdx
+@@ -0,0 +1,5 @@
++---
++sidebar_position: 4
++---
++
++# Constructed Slavic languages
+diff --git a/interslavic-fun/docs/publications-about-interslavic/design-criteria.mdx b/interslavic-fun/docs/introduction/design-criteria.mdx
+similarity index 96%
+rename from interslavic-fun/docs/publications-about-interslavic/design-criteria.mdx
+rename to interslavic-fun/docs/introduction/design-criteria.mdx
+index 8554369..8fd0051 100644
+--- a/interslavic-fun/docs/publications-about-interslavic/design-criteria.mdx
++++ b/interslavic-fun/docs/introduction/design-criteria.mdx
+@@ -1,15 +1,12 @@
+ ---
+-sidebar_position: 2
+----
+-
+-# Design criteria
+-
++sidebar_position: 3
+ license: republish
+ author: Jan van Steenbergen
+ origin: http://steen.free.fr/interslavic/design-criteria.html
+-
+ ---
+ 
++# Design criteria
++
+ Interslavic is based on the common heritage of all Slavic nations, and differences are bridged by building compromises. All Slavic languages are treated equally, although it cannot be avoided that a Slavic interlanguage is closer to „middle-of-the-road“ languages like Slovak or Rusyn than to peripheral languages like Sorbian or Macedonian. Interslavic is explicitly not meant to be „more Slavic than the Slavs“ by purifying it from foreign influences, even though a language based on the commonalities of the Slavic languages will automatically eliminate many local (non-Slavic) influences anyway. There is, however, no reason to exclude international vocabulary, provided that it can be recognised by all, or at least most, Slavic speakers.
+ 
+ The primary purpose of Interslavic, maximum intelligibility for all Slavs, is accomplished by systematically providing the largest common denominator of the Slavic languages, both in terms of grammar, orthography, syntax, and vocabulary. When a common solution cannot be found, we build a compromise. If even a compromise is impossible, we have to make a choice or simply suggest both solutions.
+@@ -59,7 +56,7 @@ International words constitute an integral part of every Slavic language. Their
+ 
+ The scope of international vocabulary is limited and it won't be helpful for many everyday concepts. Besides, there are people who simply *dislike* using it in Slavic. For that reason we attempt to provide broadly understandable Slavic alternatives as well. This is not always possible, though. For example, some Slavic nations use the Latin names of months, while others use Slavic names. The latter are much less uniform: *listopad* means „November“ in Polish and „October“ in Croatian (a typical example of a false friend), while only a Belarussian can tell which month is meant by *`kastryčnik`*. Therefore, Slavic equivalents of international words should be treated with caution.
+ 
+-International vocabulary is adopted only if used in most Slavic languages. Interslavic applies certain fixed mechanisms for borrowing it, which can be found in [a special section](use/derivation.md).
++International vocabulary is adopted only if used in most Slavic languages. Interslavic applies certain fixed mechanisms for borrowing it, which can be found in [a special section](../vocabulary/derivation.mdx).
+ 
+ When it comes to common inherited (Slavic) vocabulary, we need to do three things: select words and word roots, establish the right form for them, and assign a basic meaning to them.
+ 
+@@ -112,7 +109,7 @@ Opinions vary about the degree in which artificially created words are acceptabl
+ 
+ Once we know which word we will use, the next step is establishing what exactly it should look like. First and foremost, there must be internal consistency: whenever a certain root or morpheme occurs in a compound, it should have the same form, no matter which particular language this compound is taken from. To prevent Interslavic from becoming a hodgepodge of words picked from various languages, words are never borrowed directly from any Slavic language.
+ 
+-Instead, we go back to the hypothetical form in Proto-Slavic, which often can be found in its close relative Old Church Slavonic, and subsequently subject it to a [model for simple derivation](use/derivation.md#proto-slavic). This does not only guarantee coherence, it also enhances intelligibility and make learning easier, because the phonological development of the modern Slavic languages from Proto-Slavic tend to be extremely regular: once a person knows how a given sound in his own language is represented in Interslavic – something he will find out very quickly by reading a few texts – he will not only be able to recognise words easily, but also to predict them without checking a dictionary.
++Instead, we go back to the hypothetical form in Proto-Slavic, which often can be found in its close relative Old Church Slavonic, and subsequently subject it to a [model for simple derivation](../vocabulary/derivation.mdx#proto-slavic). This does not only guarantee coherence, it also enhances intelligibility and make learning easier, because the phonological development of the modern Slavic languages from Proto-Slavic tend to be extremely regular: once a person knows how a given sound in his own language is represented in Interslavic – something he will find out very quickly by reading a few texts – he will not only be able to recognise words easily, but also to predict them without checking a dictionary.
+ 
+ For example, the Common Slavic sequences **`tj/dj`** become **`č/ž`** in East Slavic, **`c/dz`** in Polish, **`c/z`** in Czecho-Slovak, **`č/j`** in Slovene, **`ć/đ`** in Serbo-Croat, **`ḱ/ǵ`** in Macedonian and **`št/žd`** in Bulgarian. The best compromise here is probably **`č/dž`** (f.ex. *`svěča`* „candle“ and *`medžu`* „between“, which has the additional advantage that the latter is the voiced equivalent of the former, and thus creates symmetry.
+ 
+diff --git a/interslavic-fun/docs/publications-about-interslavic/faq.mdx b/interslavic-fun/docs/introduction/faq.mdx
+similarity index 97%
+rename from interslavic-fun/docs/publications-about-interslavic/faq.mdx
+rename to interslavic-fun/docs/introduction/faq.mdx
+index 14f55e7..b345189 100644
+--- a/interslavic-fun/docs/publications-about-interslavic/faq.mdx
++++ b/interslavic-fun/docs/introduction/faq.mdx
+@@ -1,22 +1,19 @@
+ ---
+-sidebar_position: 7
+----
+-
+-# Frequenty asked questions
+-
++sidebar_position: 5
+ license: republish
+ author: Jan van Steenbergen
+ origin: http://steen.free.fr/interslavic/faq.html
+-
+ ---
+ 
++# Frequently asked questions
++
+ ## How to learn and use Interslavic?
+ 
+ This depends very much on what your needs are, and also on whether you are a Slav yourself. If you want to write a text in Interslavic, there is no need to really learn it. All you need is the grammar and the dictionary. Don't be afraid that the result will be bad, because there is no such thing as *bad Interslavic*: remember that Interslavic is not a hermetic language, but rather a set of recommendations you can follow at will. If you try to follow them, the result will in all likeliness be better than if you don't.
+ 
+-To be proficient in Interslavic, you will of course have to learn it. If you are Slavic or at least have good knowledge of one or more Slavic languages, this is is pretty a much a matter of gradually learning how to modify your own language in order to make it more accessible for other Slavs. Our experience is that most people quickly and easily find out how to do this by simply reading and listening. Of course, reading the [grammar](http://steen.free.fr/interslavic/grammar.html) and/or the [tutorial](http://www.neoslavonic.org) can help, too!
++To be proficient in Interslavic, you will of course have to learn it. If you are Slavic or at least have good knowledge of one or more Slavic languages, this is is pretty a much a matter of gradually learning how to modify your own language in order to make it more accessible for other Slavs. Our experience is that most people quickly and easily find out how to do this by simply reading and listening. Of course, reading the [grammar](../grammar) and/or the [tutorial](http://www.neoslavonic.org) can help, too!
+ 
+-If you are new to the Slavic languages, you obviously cannot take any existing Slavic language as a starting point. A beginner's course is in preparation, but in the meantime, just read the grammar and the afore-mentioned tutorial carefully. You can also start with learning [`Slovianto`](../grammar/simplified/1.mdx), a highly simplified form of Interslavic that allows you to start communicating on a very basic level, while gradually enlarging your knowledge and skills.
++If you are new to the Slavic languages, you obviously cannot take any existing Slavic language as a starting point. A beginner's course is in preparation, but in the meantime, just read the grammar and the afore-mentioned tutorial carefully. You can also start with learning [`Slovianto`](http://steen.free.fr/interslavic/grammar.html#simple_grammar), a highly simplified form of Interslavic that allows you to start communicating on a very basic level, while gradually enlarging your knowledge and skills.
+ 
+ When it comes to speaking, one has always to remember that communication is not just a matter of language. The non-verbal part is equally important. When you try to use Interslavic in a conversation, always make sure that the person you are talking to actually understands you. Speak slowly, keep eye-contact, articulate well, and always be a good listener.
+ 
+@@ -32,7 +29,7 @@ All we can say with certainty is that a vast majority of those who have commente
+ 
+ ## What are those weird diacritics and letters some people use in Interslavic?
+ 
+-The Interslavic Latin alphabet has four letters with a diacritic: **`Č`**, **`Š`** and **`Ž`** (used in all Slavic orthographies except Polish) as well as **`Ě`** (used in Czech and Sorbian, representing a „ye“ sound). However, in some texts, but also in the dictionary, you may encounter letters like **`Å`**, **`Đ`**, **`Ȯ`**, **`Ŕ`** and **`Ų`**. These letters are optional extensions of the standard alphabet that belong to the [Interslavic etymological alphabet](../letter-and-sounds/orthography.mdx#etymological-alphabet).
++The Interslavic Latin alphabet has four letters with a diacritic: **`Č`**, **`Š`** and **`Ž`** (used in all Slavic orthographies except Polish) as well as **`Ě`** (used in Czech and Sorbian, representing a „ye“ sound). However, in some texts, but also in the dictionary, you may encounter letters like **`Å`**, **`Đ`**, **`Ȯ`**, **`Ŕ`** and **`Ų`**. These letters are optional extensions of the standard alphabet that belong to the [Interslavic etymological alphabet](../orthography.mdx#etymological-alphabet).
+ They convey additional information about etymology and pronunciation. For those whose languages have a richer phonology (like Russian and Polish), they make it easier to link Interslavic words to words in their own language. Others can simply ignore the diacritics (exceptions: **`Ć`** and **`Đ`** should be read as **`Č`** and **`DŽ`**).
+ 
+ There is absolutely nothing wrong with it if you don't know how and when to use these letters. They are not mandatory and Interslavic written in standard orthography is by no means inferior to Interslavic with these additions. Besides, we have noticed that the difference between orthographies can be very confusing for new members of our community. Interslavic is very flexible by its very nature, allowing much freedom to its users, but most people expect a language with fixed rules: too much freedom makes it hard for newcomers to learn and practise Interslavic. For that reason, users are asked not to use this extended alphabet in daily conversation, and if they choose to do so anyway, to make it clear that these additional diacritics can be ignored by the reader.
+@@ -128,4 +125,4 @@ To be suitable for modern communication, Old Church Slavonic requires a thorough
+ To ensure consistency, we never borrow words *directly* from these languages. Instead, we compare their various shapes, return to their (Old Slavonic or reconstructed) their base forms and take those as a starting point for establishing the largest common denominator according to fixed, majority-based patterns. Thus we create a close approximation of the hypothetical language that might have emerged if the Slavic languages would not have fallen apart into an entire family of languages – or, if you prefer, of what Old Church Slavonic would have become had it been allowed to develop naturally over the centuries.
+ 
+ In other words, Interslavic begins where Old Church Slavonic ends, and can be treated as a modern continuation of it. One could say that the making of Interslavic is essentially the unmaking of developments that made the Slavic languages drift apart.
+-І
+\ No newline at end of file
++І
+diff --git a/interslavic-fun/docs/publications-about-interslavic/history.mdx b/interslavic-fun/docs/introduction/history.mdx
+similarity index 86%
+rename from interslavic-fun/docs/publications-about-interslavic/history.mdx
+rename to interslavic-fun/docs/introduction/history.mdx
+index cb6345c..8a65730 100644
+--- a/interslavic-fun/docs/publications-about-interslavic/history.mdx
++++ b/interslavic-fun/docs/introduction/history.mdx
+@@ -1,20 +1,18 @@
+ ---
+-sidebar_position: 3
+----
+-
+-# A short history of Interslavic
+-
++sidebar_position: 2
+ license: republish
+ author: Jan van Steenbergen
+ origin: http://steen.free.fr/interslavic/history.html
+-
++title: History of Interslavic
+ ---
+ 
++# A short history of Interslavic
++
+ The history of the Interslavic language is closely connected with Pan-Slavism, an ideology that believes that the Slavs are one nation and aims at their cultural and political unification. Along with the idea of a common Slavic state comes also the idea of a common Slavic language. From the beginning, the question has been what this language should look like.
+ 
+ A strong candidate has always been **Russian**, in terms of speakers the largest Slavic language by far. Nowadays, it is the native language of nearly half of the Slavs and spoken (almost) fluently by another 15–20%. Besides, Russia has always been a huge empire, a regional superpower, and it is the only Slavic country with an unbroken tradition of statehood. Not surprisingly, Russian has been advocated as a Pan-Slavic language mostly by Russian Pan-Slavists, who have always made it abundantly clear that Russian hegemony is a conditio sine qua non for a Slavic state, and this is precisely why the idea never gained much popularity among the smaller Slavic nations. Even though they recognise their cultural ties with Russia, they refuse be treated as „disfigured Russians“ and most them do not have the best experience with Russian domination. In addition, Russian is not a simple language and it has numerous features that make it hard to understand for speakers of other Slavic languages.
+ 
+-Another popular candidate is **'Old Church Slavonic'**, the oldest written Slavic language, codified (or created, according to some) in the 9th century by the brothers St. Cyril and St. Method. This language has several advantages: it is very closely related to the common ancestor of the Slavic languages, and has a long tradition of use in Orthodox liturgy, thus being both a common ground and a common influence for many Slavic languages. It has the additional advantage of not being anybody's native language, so that it can easily be put forward as a neutral, international language similar to Latin or Sanskrit. In spite of these assets, however, Old Church Slavonic has several practical drawbacks as well. The fact that it was positioned as a sacred language has made it particularly resistant to change, so that even the later „redactions“ are little more than the original with some *couleur locale* mixed in. As a result, Old Church Slavonic has an abundantly rich orthography containing several characters and sounds that have fallen out of use, an equally rich and therefore complicated grammar, and an extremely archaic vocabulary, featuring words that have not survived in any of the contemporary languages, yet lacking words for modern concepts. As early as the 17th century Juraj Križanić, arguably the first Pan-Slavist, noted that Old Church Slavonic had become too archaic to be feasible as a Pan-Slavic language. In other words, it would require some thorough modernisation, and this is where **Interslavic** comes in. Interslavic, one might say, begins where Old Church Slavonic ends.
++Another popular candidate is **Old Church Slavonic**, the oldest written Slavic language, codified (or created, according to some) in the 9th century by the brothers St. Cyril and St. Method. This language has several advantages: it is very closely related to the common ancestor of the Slavic languages, and has a long tradition of use in Orthodox liturgy, thus being both a common ground and a common influence for many Slavic languages. It has the additional advantage of not being anybody's native language, so that it can easily be put forward as a neutral, international language similar to Latin or Sanskrit. In spite of these assets, however, Old Church Slavonic has several practical drawbacks as well. The fact that it was positioned as a sacred language has made it particularly resistant to change, so that even the later „redactions“ are little more than the original with some *couleur locale* mixed in. As a result, Old Church Slavonic has an abundantly rich orthography containing several characters and sounds that have fallen out of use, an equally rich and therefore complicated grammar, and an extremely archaic vocabulary, featuring words that have not survived in any of the contemporary languages, yet lacking words for modern concepts. As early as the 17th century Juraj Križanić, arguably the first Pan-Slavist, noted that Old Church Slavonic had become too archaic to be feasible as a Pan-Slavic language. In other words, it would require some thorough modernisation, and this is where **Interslavic** comes in. Interslavic, one might say, begins where Old Church Slavonic ends.
+ 
+ Križanić was the first to actually describe a language, which he named **`Ruski`** in an effort to please the tsar, but which was in fact a mix of Russian Church Slavonic and Croatian, as well as elements from other Slavic languages, notably Polish. It was completed in 1666 and is often quoted as the first constructed Interslavic language. In later years, his example has been followed by many others. In the 19th century, when Pan-Slavism was at its peak, another ten projects by Czech, Slovak, Slovene and Croatian authors saw the light. Of these, most elaborate were: **`Universalis Lingua Slavica`**, published in 1826 by the Slovak Ján Herkeľ, a language based primarily on the West Slavic languages; **`Vsjeslovianьskyь`**, based on Church Slavonic and published in 1861 by the Czech Vaceslav Bambas; and **`Uzajemni Pravopis Slavjanski`**, published in 1865 by the Slovene Matija Majar-Ziljski. Whereas most projects were aimed at reviving and modernising (Old) Church Slavonic, Majar chose an entirely different approach. His project was based on the idea that Slavs could make themselves better understandable to other Slavs taking their own language as a starting point and then gradually modifying it. The first step in that process was altering the orthography, resulting in a generic („mutual“) Pan-Slavic orthography. Subsequently, he proposed a grammar that was based on linguistic comparison of the five major Slavic languages of those days: Russian, Polish, Czech, Serbian and Old Church Slavonic.
+ 
+@@ -34,7 +32,7 @@ The same idea was also picked up in February 2009 by Steeven Radzikowski, Andrej
+ 
+ For all versions of `Slovianski` and `Slovioski` goes that they were heavily influenced by the notion that an auxiliary language should be simple. Even `Slovianski-N` – in spite of it having gender and cases – had a highly simplified system for declining nouns and conjugating verbs. However, both projects showed an increasing tendency towards favouring natural solutions over simplicity. As a result, the naturalistic element ultimately prevailed in both projects. This shift towards naturalism was strengthened even more after a new project entered the scene: **`Novoslovienskij`** („`Neoslavonic`“), published in 2010 by Vojtěch Merunka. Unlike `Slovianski` and `Slovioski`, it was based directly on Old Church Slavonic, which it attempted to modernise by simplifying its orthography and expanding it with modern vocabulary taken from `Slovianski`, while preserving archaic elements like multiple past tenses and the dual.
+ 
+-All three projects collaborated closely with each other from that time, and in 2011 **`Medžuslovjanski`** („Interslavic“) was chosen as a common moniker. Fruits of this cooperation were, among other things, a common dictionary, a common news portal and a common wiki. As emphasis increasingly shifted from simplicity towards flexibility, `Slovianski` developed from a language with fixed rules into a more flexible language with a prototype orthography that could easily be converted according to one's needs, two different grammar levels and various possibilities for [flavourisation](use/flavourisation.md). This multi-level grammar included a highly simplified grammar model, **Slovianto**, developed to replace both **`Slovianski-P`** and **Prostij Slovioski**, and a more advanced grammar that was based on `Slovianski`, Novosloviensky and various older projects, and aimed at integrating them. At that time, Slovioski ceased to exist as a separate project.
++All three projects collaborated closely with each other from that time, and in 2011 **`Medžuslovjanski`** („Interslavic“) was chosen as a common moniker. Fruits of this cooperation were, among other things, a common dictionary, a common news portal and a common wiki. As emphasis increasingly shifted from simplicity towards flexibility, `Slovianski` developed from a language with fixed rules into a more flexible language with a prototype orthography that could easily be converted according to one's needs, two different grammar levels and various possibilities for [flavourisation](vocabulary/flavourisation.mdx). This multi-level grammar included a highly simplified grammar model, **Slovianto**, developed to replace both **`Slovianski-P`** and **Prostij Slovioski**, and a more advanced grammar that was based on `Slovianski`, Novosloviensky and various older projects, and aimed at integrating them. At that time, Slovioski ceased to exist as a separate project.
+ 
+ During the years to follow, `Medžuslovjanski` and `Novoslovienskij` (soon renamed **`Novoslověnsky`**) gradually grew closer to each other. Their user communities consisted largely of the same people, who often mixed elements from both projects. As a result, most differences between both projects vanished in a natural way.
+ 
+diff --git a/interslavic-fun/docs/publications-about-interslavic/introduction.mdx b/interslavic-fun/docs/introduction/index.mdx
+similarity index 97%
+rename from interslavic-fun/docs/publications-about-interslavic/introduction.mdx
+rename to interslavic-fun/docs/introduction/index.mdx
+index 7d0b138..c895b8b 100644
+--- a/interslavic-fun/docs/publications-about-interslavic/introduction.mdx
++++ b/interslavic-fun/docs/introduction/index.mdx
+@@ -1,15 +1,12 @@
+ ---
+ sidebar_position: 1
+----
+-
+-# Introduction
+-
+-License: republish
++license: republish
+ author: Jan van Steenbergen
+ origin: http://steen.free.fr/interslavic/introduction.html
+-
+ ---
+ 
++# Introduction
++
+ ## What is Interslavic?
+ 
+ **Interslavic** is a language for communication between Slavs of different nationalities, rooted in centuries of geographical proximity, shared history and common cultural heritage. More than anything else, it is based on linguistic similarity, because the Slavic language family is essentially one large continuum of closely related dialects with a relatively high degree of mutual intelligibility. Throughout the centuries, Slavs have explored the centre of this continuum in various ways: ordinary people learned to talk to their neighbours by means of simple, improvised language forms, while linguists and others have attempted to describe a generic Slavic language that would be understandable to all Slavs alike, often, albeit not always, taking Old Church Slavonic as a starting point.
+@@ -41,11 +38,11 @@ It should be emphasised that Interslavic is not related to any religion, ideolog
+ 
+ Over the centuries, [numerous attempts](http://steen.free.fr/interslavic/constructed_slavic_languages.html) have been made at an umbrella language for Slavs, carrying names like „Pan-Slavic“, „Common Slavic“, „Inter-Slavic“, „Modern Slavic“ or simply „Slavic“. Some of them have elaborate grammars, others are mere sketches. Some were meant to serve as a language for a unified pan-Slavic state or to enhance communication between Slavs of various nationalities, others were created just for fun. Some of them put more weight on simplicity than others. Some are based on Old Church Slavonic or reconstructed Proto-Slavic, others draw their material from the modern languages. What all these proposals have in common though, is that they simplify grammar to a certain degree, use an orthography that is more in line with contemporary needs and possibilities, replace archaic features with modern material, and seek the middle point between multiple, if not all, Slavic languages. Obviously, these projects are not identical to each other, but the differences between them are not significant in the sense that understandability is dramatically affected. A language based on comparating the modern languages will differ from a modernised Proto-Slavic only in details; both approaches can easily be combined in one dictionary. Because there is so much overlap between all naturalistic projects, they can impossibly be considered separate languages, rather attempts at the very same language.
+ 
+-Differences between them are mostly due to the fact that their authors make choices between several options provided by the Slavic languages, and more often than not these choices are coloured by their own native language. For example, South Slavic authors consistently distinguish between hard **`L`** and soft **`LJ`**, while Czech authors tend to find this distinction irrelevant and use only **`L`**, as Czech does. Differences in pronunciation, however, occur between different dialects of natural languages, too. In some parts of Russia, the word *молоко* is pronounced [`mɔlɔ'kɔ`], in other parts [`məlɑ'kɔ`], yet everybody knows that it is the same word in the same language. Similar differences occur between the Slavic languages: Russian *`пять`* [`pʲætʲ`], Polish *`pięć`* [`pʲɛɲt͡ɕ`] and South Slavic *`pet`* [`pɛt`] are all locally coloured versions of one and the same word.
++Differences between them are mostly due to the fact that their authors make choices between several options provided by the Slavic languages, and more often than not these choices are coloured by their own native language. For example, South Slavic authors consistently distinguish between hard **`L`** and soft **`LJ`**, while Czech authors tend to find this distinction irrelevant and use only **`L`**, as Czech does. Differences in pronunciation, however, occur between different dialects of natural languages, too. In some parts of Russia, the word *`молоко`* is pronounced [`mɔlɔ'kɔ`], in other parts [`məlɑ'kɔ`], yet everybody knows that it is the same word in the same language. Similar differences occur between the Slavic languages: Russian *`пять`* [`pʲætʲ`], Polish *`pięć`* [`pʲɛɲt͡ɕ`] and South Slavic *`pet`* [`pɛt`] are all locally coloured versions of one and the same word.
+ 
+ Interslavic, one might say, is a language that was never successfully standardised, despite many attempts in that direction. Every user writes differently, following his own preferences and/or possibilities. Some adhere strictly to the rules of one particular project, others combine elements from multiple projects, others again follow their own unwritten rules. What matters though is that they all operate within certain „margins“.
+ 
+-Interslavic as presented on these pages is not the only possible way of speaking and writing Interslavic. Yet, its current form is the fruit of years of collaboration, gradual convergence and ultimately the merger of the two most active and elaborated projects from the last decade, `[Slovianski]`(http://steen.free.fr/interslavic/grammar.html#slovianski) and [`Neoslavonic`](https://neoslavonic.org), incorporating material from older projects as well. It is intended to be inclusive: whenever two possibilities are equally understandable to Slavs, there is no point in enforcing one of them and forbidding the other. But on the other hand, because a certain level of standardisation is inevitable to prevent the language from becoming needlessly confusing for learners, the grammar always suggests one preferred option.
++Interslavic as presented on these pages is not the only possible way of speaking and writing Interslavic. Yet, its current form is the fruit of years of collaboration, gradual convergence and ultimately the merger of the two most active and elaborated projects from the last decade, [`Slovianski`](http://steen.free.fr/interslavic/grammar.html#slovianski) and [`Neoslavonic`](https://neoslavonic.org), incorporating material from older projects as well. It is intended to be inclusive: whenever two possibilities are equally understandable to Slavs, there is no point in enforcing one of them and forbidding the other. But on the other hand, because a certain level of standardisation is inevitable to prevent the language from becoming needlessly confusing for learners, the grammar always suggests one preferred option.
+ 
+ ## Classification
+ 
+diff --git a/interslavic-fun/docs/letter-and-sounds/_category_.json b/interslavic-fun/docs/letter-and-sounds/_category_.json
+deleted file mode 100644
+index 03e3cf6..0000000
+--- a/interslavic-fun/docs/letter-and-sounds/_category_.json
++++ /dev/null
+@@ -1,8 +0,0 @@
+-{
+-    "label": "Letter and sounds",
+-    "position": 2,
+-    "link": {
+-      "type": "generated-index"
+-    }
+-  }
+-  
+\ No newline at end of file
+diff --git a/interslavic-fun/docs/letter-and-sounds/orthography.mdx b/interslavic-fun/docs/orthography.mdx
+similarity index 95%
+rename from interslavic-fun/docs/letter-and-sounds/orthography.mdx
+rename to interslavic-fun/docs/orthography.mdx
+index 8784389..bc21129 100644
+--- a/interslavic-fun/docs/letter-and-sounds/orthography.mdx
++++ b/interslavic-fun/docs/orthography.mdx
+@@ -1,13 +1,17 @@
+ ---
+-sidebar_position: 1
++sidebar_position: 2
++license: republish
++author: Jan van Steenbergen
++origin: http://steen.free.fr/interslavic/orthography.html
+ ---
+-import Alphabet from '../partials/_alphabet.mdx';
+-import LatinAlphabet from '../partials/_latin-alphabet.mdx';
+-import CyrillicAlphabet from '../partials/_cyrillic-alphabet.mdx';
++
++import Alphabet from './partials/_alphabet.mdx';
++import LatinAlphabet from './partials/_latin-alphabet.mdx';
++import CyrillicAlphabet from './partials/_cyrillic-alphabet.mdx';
+ 
+ # Orthography
+ 
+-## Standard alphabet _(`Standardny alfabet`)_
++## Standard alphabet
+ 
+ The question how Interslavic should be written has always been subject to discussion. Ideally, every Slav should be able to write it on their own keyboard, but this would rule out the possibility of a single standard orthography. The various national orthographies are simply too divergent to find a solution that is convenient for everybody. Making any of them „official” or „standard” would be unfair, because all other possibilities would automatically be rendered „inofficial”, „non-standard” and therefore „incorrect”. But on the other hand, a situation with too many different writing standards has the disadvantage of being confusing and potentially discouraging for people hoping to learn Interslavic.
+ 
+@@ -27,7 +31,7 @@ Interslavic keyboard layouts can be downloaded [here](http://tyflonet.com/sicili
+ 
+ ---
+ 
+-## Representation of problematic characters _(`Pisanje problematičnyh bukv`)_
++## Representation of problematic characters
+ 
+ As noted above, both the Latin and Cyrillic alphabets include characters that cannot be written on every Slavic keyboard. Those who cannot write a character on their own keyboard have several alternatives at their disposal. Here are a few recommendations:
+ 
+@@ -64,7 +68,7 @@ The Cyrillic counterparts of **`lj`** and **`nj`** are **`љ`** and **`њ`**, ta
+ 
+ ---
+ 
+-## Etymological alphabet _(`Etimologičny alfabet`)_
++## Etymological alphabet
+ 
+ In addition to the standard Latin alphabet, Interslavic also contains a number of optional letters that refer specifically to Proto-Slavic/Old Church Slavonic phonemes that have diverged or disappeared in most modern languages:
+ 
+@@ -94,7 +98,7 @@ This etymology-based alphabet (previously known as _Naučny medžuslovjansky_ 
+ *   conveying etymological information,
+ *   supporting the learning process by making Interslavic words easier to link to their counterparts in other Slavic languages,
+ *   giving more precise information about the ideal (most central) pronunciation,
+-*   enabling users to adapt („flavourise”) written and spoken Interslavic for speakers of particular languages (see [flavourisation](flavorizacija.html)),
++*   enabling users to adapt („flavourise”) written and spoken Interslavic for speakers of particular languages (see [flavourisation](vocabulary/flavourisation.mdx)),
+ *   making it possible to transcribe text from any Slavic language into Interslavic orthography.
+ 
+ ### Usage
+@@ -111,9 +115,9 @@ In the Latin alphabet, additional etymological information is conveyed by means
+ 
+ ---
+ 
+-## Overview _(`Prěgled`)_ 
++## Overview
+ 
+-The following table shows the correspondences between the letters mentioned above (suggested alternative spellings are shown in grey between brackets). The [transliterator](transliterator.html) makes it possible to transliterate between Latin and Cyrillic.
++The following table shows the correspondences between the letters mentioned above (suggested alternative spellings are shown in grey between brackets). The [transliterator](http://steen.free.fr/interslavic/transliterator.html) makes it possible to transliterate between Latin and Cyrillic.
+ 
+ ---
+ 
+@@ -121,7 +125,7 @@ The following table shows the correspondences between the letters mentioned abov
+ 
+ ---
+ 
+-## Guidelines _(`Směrnice`)_
++## Guidelines
+ 
+ To summarise, there are several possibilities for writing the same word. The general guideline is: the more understandable the better. However, there are a few things to keep in mind:
+ 
+@@ -132,4 +136,4 @@ To summarise, there are several possibilities for writing the same word. The gen
+ *   Be consistent in your choices. If, for example, you decide to use **`sz`** for representing **`š`**, keep it that way in the whole text or conversation, otherwise you will only create confusion. For the same reason, if you use **`sz`**, then don't use **`č`** or **`cx`** at the same time.
+ *   Do not use non-letter characters (**^ '** etc.) as a means to replace diacritics. They will not make your text more readable and most people find them ugly.
+ *   Never mix Latin with Cyrillic.
+-*   When addressing a members of a particular Slavic nation (for example, when you are travelling), you might consider [flavourising your Interslavic](flavorizacija.html). However, do not use flavorisation in multi-Slavic environments.
+\ No newline at end of file
++*   When addressing a members of a particular Slavic nation (for example, when you are travelling), you might consider [flavourising your Interslavic](vocabulary/flavourisation.mdx). However, do not use flavorisation in multi-Slavic environments.
+diff --git a/interslavic-fun/docs/letter-and-sounds/phonology.mdx b/interslavic-fun/docs/phonology.mdx
+similarity index 94%
+rename from interslavic-fun/docs/letter-and-sounds/phonology.mdx
+rename to interslavic-fun/docs/phonology.mdx
+index 8e74076..6e97068 100644
+--- a/interslavic-fun/docs/letter-and-sounds/phonology.mdx
++++ b/interslavic-fun/docs/phonology.mdx
+@@ -1,17 +1,21 @@
+ ---
+-sidebar_position: 2
++sidebar_position: 3
++license: republish
++author: Jan van Steenbergen
++origin: http://steen.free.fr/interslavic/orthography.html
+ ---
+-import Consonants from '../partials/_consonants.mdx';
++
++import Consonants from './partials/_consonants.mdx';
+ 
+ # Phonology
+ 
+-## Phoneme inventory _(`Zvukosbor`)_
++## Phoneme inventory
+ 
+ Interslavic is neither a national language, nor does it try to emulate one. Instead, it is based on twelve national languages, each of them having its own phonology and its own corresponding orthography, tailored to fit its particular characteristics. In general, it can be said that the further South you go, the smaller the phoneme (sound) inventory becomes. Both spoken and written Interslavic should be in the very middle of them as much as possible.
+ 
+ A high number of phonemes makes intuitive writing and pronouncing Interslavic harder for those who are used to fewer phonemes. A low number, on the other hand, makes it harder to link a particular character or sound to a phoneme in one's own language, and therefore has a negative effect on intelligibility. For example, the ideal pronunciation of the word for „five” would be something like \[`pjætʲ`\]. If we write this as _`pęt́`_, a Russian can easily recognise his own _`pjať`_, a Serb his own _`pet`_ and a Pole his own _`pięć`_; but for a Serb, there is no way of knowing when his own **`e`** and **`t`** become **`ę`** and **`t́`** without consulting a dictionary. On the other hand, in a simplified scheme _pet_ could also be misunderstood as Russian _`peť`_ „to sing” or Polish _`pet`_ „cigarette butt”. In short: the easier we make it for the speaker/writer, the harder it becomes for the listener/reader, and vice versa.
+ 
+-To solve this dilemma, Interslavic has a basic set of phonemes that are present in all or a vast majority of the Slavic languages, more or less with the same phonetic values. In addition, Interslavic also has a set of optional phonemes that link directly to Old Church Slavonic and refer to particular phonetic differences between languages. Using the aforementioned word _pęt́_ as an example, Russian \[`pjætʲ`\] and South Slavic \[`pɛt`\] are simply two ways of pronouncing the very same word: the letters **`ę`** and **`t́`** indicate that their pronunciation varies among languages. These additional phonemes can be written by means of an additional set of optional letters, part of the [Interslavic etymological alphabet](orthography.html#etymological_alphabet) (previously known as „Naučny Medžuslovjansky”).
++To solve this dilemma, Interslavic has a basic set of phonemes that are present in all or a vast majority of the Slavic languages, more or less with the same phonetic values. In addition, Interslavic also has a set of optional phonemes that link directly to Old Church Slavonic and refer to particular phonetic differences between languages. Using the aforementioned word _pęt́_ as an example, Russian \[`pjætʲ`\] and South Slavic \[`pɛt`\] are simply two ways of pronouncing the very same word: the letters **`ę`** and **`t́`** indicate that their pronunciation varies among languages. These additional phonemes can be written by means of an additional set of optional letters, part of the [Interslavic etymological alphabet](orthography.mdx#etymological_alphabet) (previously known as „Naučny Medžuslovjansky”).
+ 
+ The following charts give an overview of phonemes in Interslavic, based on their most average pronunciation. The basic phonemes are shown in black, optional variations in gray.
+ 
+@@ -31,7 +35,7 @@ There are 23 basic consonants (including 3 affricates and 2 palatalised alveolar
+ 
+ <Consonants />
+ 
+-## Hard and soft consonants _(`Tvrde i mekke suglasky`)_
++## Hard and soft consonants
+ 
+ Like all Slavic languages, Interslavic distinguishes between _`hard`_ and _`soft`_ consonants:
+ 
+@@ -47,7 +51,7 @@ The soft consonants also include postalveolar **`š`**, **`ž`**, **`č`** and *
+ 
+ Before **`i`**, **`ě`**, **`ę`**, **`ė`** and **`ŕ`**, a hard consonant can be softened or palatalised. That is why a word like _`buditi`_ is pronounced either \[`buditi`\], \[`budʲitʲi`\] or \[`buɟici`\].
+ 
+-## Phonotactics _(`Fonotaktika`)_
++## Phonotactics
+ 
+ Interslavic orthography is based on etymology and not on pronunciation, so that consonant clusters can arise that may appear inpronouncable for English speakers, for example _`vozvršenje`_. The only limitations are related to combining certain vowels with certain consonants.
+ 
+@@ -61,12 +65,11 @@ It is important to know the following:
+ *   **`å`** is always preceded by a liquid (**`r`** or **`l`**) and followed by a consonant
+ *   geminate consonants occur only as a result of prefixing (_`od-dati`_, _`v-voz`_) or suffixing (_`kon-ny`_, _`rus-sky`_), in rare cases in loanwords (_`motto`_).
+ 
+-## Morphophonemic alternations _(`Morfofonemične alternacije`)_
++## Morphophonemic alternations
+ 
+ Inflection is kept as regular as possible. However, alternations like palatalisation and iotisation of consonants are an omnipresent phenomenon in Slavic. They play a crucial role in both inflection and the world building process, and thus cannot be avoided even in the most simplified form of Interslavic—at least, if we want to avoid forms that come across as heavily artificial and unnatural.
+ 
+ ### Palatalisation
+-Як відредагувати тут?
+ 
+ _`Palatalisation`_ means that under certain conditions the velar consonants **`k` `g` `h`** (as well as the dental affricate **`c`**) are changed to the postalveolar consonants **`č` `ž` `š`**. This happens in the following cases:
+ 
+@@ -113,15 +116,13 @@ Complicated as this may seem, all this means in writing is that the suffixes **\
+ 
+ The differences between softened, patalalised and iotated consonants are demonstrated in the following table (again, phonemes in gray are optional):
+ 
+-
+-
+-### O > E
++### `O > E`
+ 
+ Old Slavic used to have a peculiar intolerance of **`o`** following a soft consonant, and whenever such a sequence occurred because of an ending or a suffix, the **`o`** was changed to **`e`**. This development has left its marks in all Slavic languages, although nowadays they differ as to the degree in which the is still applied. For example, in Russian soft consonant + o sequences are a rarity, while Polish has only some lexicalised remnants of the rule (f.ex. _królewski_ „royal”, but: _królowa_ „queen”).
+ 
+ This rule applies in Interslavic as well. Thus, endings like **\-`o`**, **\-`ov`**, **\-`om`**, **\-`ogo`** and **\-`oj`** become **\-`e`**, **\-`ev`**, **\-`em`**, **\-`ego`** and **\-`ej`** after a soft consonant. Because of the o/e rule, we have :notr[**morj****e**] versus :notr[**okn**o****], :notr[**kraj**e**v**] versus :notr[**grad**o**v**], and :notr[**č**e**go**] versus :notr[**k**o**go**]. The same mechanism also works in combination with suffixes like **\-`ost`**, **\-`ovati`** and **\-`ovy`**, for example: :notr[**svěž**e**st́**], :notr[**noč**e**vati**].
+ 
+-#### Y > I/E
++#### `Y > I/E`
+ 
+ In South Slavic and Ukrainian, as well as in spoken Czech and Slovak, **`i`** and **`y`** have merged into one vowel. In Interslavic, the pronunciation of **`y`** may therefore be \[`i`\], \[`ɪ`\], \[`ɨ`\] or anything in between. What matters, though, is that **`y`** can _only_ occur after a hard consonant, and therefore not after a soft consonant (**`š` `ž` `č` `dž` `c` `lj` `nj` `j`**), after a vowel or word-initially. Because **`y`** plays an prominent role in Interslavic inflection, most declensions have a hard and a soft version because of this limitation.
+ 
+@@ -131,31 +132,31 @@ In noun declension, however, the soft counterpart of **`y`** is always **`e`**.
+ 
+ Because several Slavic languages do not distinguish between **`i`** and **`y`** at all, substituting all occurrences of **`y`** with **`i`** is an acceptable simplification in written Interslavic.
+ 
+-#### `Ě` > I
++#### `Ě > I`
+ 
+ Just like **`y`**, the phoneme **`ě`** always follows a hard consonant. In the dative and locative singular of feminine nouns, it becomes **i** after a soft consonant, i.e. it follows a pattern opposite to **`y` > `e`**: :notr[_žen**\-ě**_], but :notr[_zemj**\-i**_].
+ 
+-#### Fleeting o/e
++#### Fleeting `o/e`
+ 
+ A characteristic feature of the Slavic languages is the existence of "fleeting" or "movable" vowels, referring to the phenomenon of vowels appearing and disappearing in a seemingly random manner, especially in certain inflected forms of nouns. This is a result of different reflexes of the Common Slavic jers **`ъ`** and **`ь`**, which were lost in weak positions and vocalised to **`o`** and **`e`** in strong positions. In most cases this vowel appears in words that would otherwise end in a consonant cluster, and disappears when this cluster is followed by an ending.
+ 
+ Fleeting **`o`** and **`e`** (in the etymological alphabet marked with a dot: **`ȯ`** and **`ė`**) appear especially in the following cases:
+ 
+-*   in the nominative (and, in the case of inanimate nouns, the accusative) singular of masculine nouns, particularly those ending in _\-`ec`_ and _\-`ok`_, as well as a few other nouns:  
+-    nom.sg. :notr[_ot**ė**c_] „father” > gen.sg. _`otca`_  
+-    nom.sg. :notr[_pěs**ȯ**k_] „sand” > gen.sg. _`pěska`_  
+-    nom.sg. :notr[_p**ė**s_] „dog” > gen.sg. _`psa`_  
+-    nom.sg. :notr[_s**ȯ**n_] „dream” > gen.sg. _`sna`_  
++*   in the nominative (and, in the case of inanimate nouns, the accusative) singular of masculine nouns, particularly those ending in _\-`ec`_ and _\-`ok`_, as well as a few other nouns:
++    nom.sg. :notr[_ot**ė**c_] „father” > gen.sg. _`otca`_
++    nom.sg. :notr[_pěs**ȯ**k_] „sand” > gen.sg. _`pěska`_
++    nom.sg. :notr[_p**ė**s_] „dog” > gen.sg. _`psa`_
++    nom.sg. :notr[_s**ȯ**n_] „dream” > gen.sg. _`sna`_
+     nom.sg. :notr[_kr**ȯ**v_] „blood” > gen.sg. _`krvi`_
+-*   in the genitive plural of feminine and neuter nouns that would otherwise end in a consonant cluster:  
+-    nom.sg. _`okno`_ „window” > gen.pl. :notr[_ok**ė**n_]  
++*   in the genitive plural of feminine and neuter nouns that would otherwise end in a consonant cluster:
++    nom.sg. _`okno`_ „window” > gen.pl. :notr[_ok**ė**n_]
+     nom.sg. _`miska`_ „bowl” > gen.pl. :notr[_mis**ȯ**k_]
+-*   in the nominative singular masculine forms of certain pronouns:  
++*   in the nominative singular masculine forms of certain pronouns:
+     m.nom.sg. :notr[_v**ė**ś_] „all, entire”, f.nom.sg. _`vśa`_
+-*   before certain suffixes:  
++*   before certain suffixes:
+     _`piśmo`_ „letter, script” > :notr[_pis**ė**mny_] „written, in writing”
+-*   the prepositions **`s`** and **`v`** when preceding certain pronouns or consonant clusters, or when used as a prefix before a vowel or a consonant cluster:  
+-    _`s`_ „with” + _`mnojų`_ „me (instr.sg.)” > :notr[_s**ȯ** mnojų_]  
+-    _`v`_ „in” + _`vsih`_ „all (loc.pl.)” > :notr[_v**ȯ** vsih_]  
+-    _`s`-_ + _`držati`_ > :notr[_s**ȯ**držati_] „to contain”  
+-    _`v`-_ + _`idti`_ > :notr[_v**ȯ**jdti_] „to enter”
+\ No newline at end of file
++*   the prepositions **`s`** and **`v`** when preceding certain pronouns or consonant clusters, or when used as a prefix before a vowel or a consonant cluster:
++    _`s`_ „with” + _`mnojų`_ „me (instr.sg.)” > :notr[_s**ȯ** mnojų_]
++    _`v`_ „in” + _`vsih`_ „all (loc.pl.)” > :notr[_v**ȯ** vsih_]
++    _`s`-_ + _`držati`_ > :notr[_s**ȯ**držati_] „to contain”
++    _`v`-_ + _`idti`_ > :notr[_v**ȯ**jdti_] „to enter”
+diff --git a/interslavic-fun/docs/letter-and-sounds/pronunciation.mdx b/interslavic-fun/docs/pronunciation.mdx
+similarity index 86%
+rename from interslavic-fun/docs/letter-and-sounds/pronunciation.mdx
+rename to interslavic-fun/docs/pronunciation.mdx
+index ef9f090..0a07254 100644
+--- a/interslavic-fun/docs/letter-and-sounds/pronunciation.mdx
++++ b/interslavic-fun/docs/pronunciation.mdx
+@@ -1,13 +1,13 @@
+ ---
+-sidebar_position: 3
++sidebar_position: 4
+ ---
+-import PronAlphabet from '../partials/_pronunciation-of-the-alphabet.mdx';
+-import EtimAlphabetExt from '../partials/_etymological-alphabet-extensions.mdx';
++import PronAlphabet from './partials/_pronunciation-of-the-alphabet.mdx';
++import EtimAlphabetExt from './partials/_etymological-alphabet-extensions.mdx';
+ 
+ 
+ # Pronunciation
+ 
+-## Overview (`Prěgled`)
++## Overview
+ 
+ How ethnic languages are pronounced is determined by their native speakers. This goes for Interslavic as well: although it is neither an ethnic language nor a language intended to serve as a standard language for Slavs, it should be comfortable and familiar to pronounce for Slavs. All Slavic accents are equally correct: just like the British, American and Australian pronunciations are all equally correct in English, a Russian pronunciation of Interslavic is by no means better or worse than a Serbian or Polish pronunciation. As a result, the pronunciation of most sounds (phonemes) is variable, depending on the nationality of the speaker, and any pronunciation given below is just an approximation. The fact that pronunciation is fairly free, however, does not mean that there cannot be an „ideal” pronunciation for every phoneme.
+ 
+@@ -22,18 +22,18 @@ Notes:
+ 3.  Apart from **`a` `e` `ě` `i` `o` `u` `y`**, the letter **`r`** can be a vowel, too. That is the case when it appears after a consonant and is not followed by a vowel, resulting in so-called _syllabic r_. It should be pronounced with a schwa before it (more or less like the name „Murphy”): _`trg`_ \[`tərg`\], _`cukr`_ \[`ʦukər`\].
+ 4.  For the ease of pronunciation, it is always possible to insert a schwa in an inconvenient consonant cluster: _`jesm`_ \[`jɛsǝm`\], _`himn`_ \[`ximǝn`\], _`vedl`_ \[`vɛdǝl`\].
+ 5.  Speakers of languages like English and German should be aware that any type of aspiration (as in English „pork” or German „Tüte”) must be avoided.
+-6.  When **`ě`** follows a dental/alveolar consonant (**`t` `d` `s` `z` `n` `l` `r`**), this consonant is pronounced soft (see [phonology](./phonology.html#hard_and_soft)). After other consonants it produces the same sound as **`e`**, but preceded by **`j`**: _`dělo`_ sounds like _\*`ďelo`_, _`pěsok`_ like _\*`pjesok`_.
++6.  When **`ě`** follows a dental/alveolar consonant (**`t` `d` `s` `z` `n` `l` `r`**), this consonant is pronounced soft (see [phonology](./phonology.mdx#hard_and_soft)). After other consonants it produces the same sound as **`e`**, but preceded by **`j`**: _`dělo`_ sounds like _\*`ďelo`_, _`pěsok`_ like _\*`pjesok`_.
+ 7.  A consonant before **`i`** can be pronounced soft, too, but this is not mandatory.
+ 8.  Likewise, a consonant is inherently soft before **`j`** as well, unless this consonant is part of a prefix: _`žitje`_ is pronounced _`žiťje`_, but in the word _odjehati_ the **`d`** remains hard.
+ 9.  On the other hand, although the Proto-Slavic phoneme **`e`** softens the preceding consonant in Polish and Russian, it is better to keep a hard pronunciation in this case.
+ 10.  The letter **`l`** is a somewhat special case. Before **`a` `o` `u` `y`**, as well as syllable-finally, it sounds like the „thick” **`l`** in _full_. Before **`e`**, **`ě`** and **`i`** is rather tends to follow the pronunciation pattern of **`lj`**: _`lev`_ \[`lʲɛv`\] ~ \[`ʎɛf`\], etc.
+ 11.  There are no strict rules for devoicing voiced consonants at the end of a word, or voicing unvoiced consonants before voiced consonants. Anybody can use the pronunciation he feels most comfortable with. Thus, _`Bog`_ \[`bɔk`\] and _`prosba`_ \[`prɔzbɑ`\] are both correct. In general however, it deserves recommendation to follow a pronunciation that is as close as possible to how it is written.
+ 
+-## Etymological alphabet extensions _(`Etimologično razširjenje alfabeta`)_
++## Etymological alphabet extensions
+ 
+ Apart from the standard alphabet given above, the Interslavic Latin alphabet also has a set of optional characters that basically do two things. First of all, they represent phonemes that evolved into different directions in the Slavic languages, and secondly, they link directly to their Proto-Slavic origins. For example, the vowel **`å`** in _kråva_ „cow” indicates that this word derives from Proto-Slavic _\*`korva`_, which became _krova_ in Polish and Sorbian, _korova_ in East Slavic, and _krava_ in Czech, Slovak and South Slavic. The most extreme case is undoubtedly **`đ`** (from Proto-Slavic **`dj`**), which in various languages evolved into \[`d͡z`\], \[`z`\], \[`ʒ`\], \[`ʒd`\], \[`j`\], etc.
+ 
+-These characters belong to the [etymological alphabet](orthography.html#etymological_alphabet). They are not used in ordinary written Interslavic, i.e. they are written, but without the diacritics (except for **`ć`** and **`đ`**, which are written **`č`** and **`dž`** respectively), and can of course also be pronounced as such. However, it is also possible to try for an „average” pronunciation that does more justice to the Slavic majority. In the case of aforementioned _`kråva`_, for example, that would mean a sound somewhere between **`a`** and **`o`** (in IPA: \[`ɒ`\]).
++These characters belong to the [etymological alphabet](orthography.mdx#etymological_alphabet). They are not used in ordinary written Interslavic, i.e. they are written, but without the diacritics (except for **`ć`** and **`đ`**, which are written **`č`** and **`dž`** respectively), and can of course also be pronounced as such. However, it is also possible to try for an „average” pronunciation that does more justice to the Slavic majority. In the case of aforementioned _`kråva`_, for example, that would mean a sound somewhere between **`a`** and **`o`** (in IPA: \[`ɒ`\]).
+ 
+ <EtimAlphabetExt />
+ 
+@@ -45,7 +45,7 @@ Notes:
+ 4.  When the letter **`ŕ`** acts as the soft counterpart of syllabic **`r`**, it can soften the preceding consonant or have it followed by \[j\]: _`mŕtvy`_ \[`mjǝrtvɪ`\].
+ 5.  The soft consonants **`ľ`** and **`ń`** are used for writing **`lj`** and **`nj`** before **`j`**, resulting in a certain prolongation of the latter, for example _`dělańje`_ \[`dʲɛɫanʲĭɛ`\].
+ 
+-## Stress _(`Naglas`)_
++## Stress
+ 
+ Accentuation is free. However, if you want to stay on the safe side, it would deserve recommendation to follow as guidelines:
+ 
+@@ -55,8 +55,8 @@ Accentuation is free. However, if you want to stay on the safe side, it would de
+ *   Stress should not be influenced by inflection; if the adjective _„`běly`”_ is pronounced **`běly`**, the genitive should be pronounced **`bělogo`** and not **`bělogo`**.
+ *   In general, it is better to avoid stress falling on prefixes, suffixes, case endings etc.
+ 
+-## General remark _(`Obča primětka`)_
++## General remark
+ 
+ When it comes to speaking, one has always to remember that the listener is probably not familiar with Interslavic, and even if he is, he is not used to hearing it spoken. Whenever you use Interslavic in a conversation, always make sure that the person you are talking to actually understands you. Speak slowly, keep eye-contact, articulate clearly, and always be a good listener. After all, communication is not just a matter of language, the non-verbal part is equally important.
+ 
+-The same, perhaps even more so, goes when you are addressing an audience. Interslavic has been constructed to maximise intelligibility, but that does not mean every Slav can understand every word of it. Listening to Interslavic is a matter of constantly making connections and connotations, and whenever a person hears a word he doesn't understand—which is quite inevitable—the odds are that he starts pondering about it and misses the rest of your sentence. It is necessary that you always give your audience all the time it needs to process your information, to let it sink in. So don't speak fast, speak clearly, take a deep breath between sentences, use prosody as well as you can, and so on...
+\ No newline at end of file
++The same, perhaps even more so, goes when you are addressing an audience. Interslavic has been constructed to maximise intelligibility, but that does not mean every Slav can understand every word of it. Listening to Interslavic is a matter of constantly making connections and connotations, and whenever a person hears a word he doesn't understand—which is quite inevitable—the odds are that he starts pondering about it and misses the rest of your sentence. It is necessary that you always give your audience all the time it needs to process your information, to let it sink in. So don't speak fast, speak clearly, take a deep breath between sentences, use prosody as well as you can, and so on...
+diff --git a/interslavic-fun/docs/publications-about-interslavic/_category_.json b/interslavic-fun/docs/publications-about-interslavic/_category_.json
+deleted file mode 100644
+index 55ce83f..0000000
+--- a/interslavic-fun/docs/publications-about-interslavic/_category_.json
++++ /dev/null
+@@ -1,7 +0,0 @@
+-{
+-  "label": "Publications about Interslavic",
+-  "position": 1,
+-  "link": {
+-    "type": "generated-index"
+-  }
+-}
+diff --git a/interslavic-fun/docs/publications-about-interslavic/interslavic-at-wikipedia.mdx b/interslavic-fun/docs/publications-about-interslavic/interslavic-at-wikipedia.mdx
+deleted file mode 100644
+index d2ca32f..0000000
+--- a/interslavic-fun/docs/publications-about-interslavic/interslavic-at-wikipedia.mdx
++++ /dev/null
+@@ -1,6 +0,0 @@
+----
+-sidebar_position: 5
+----
+-
+-# Interslavic at Wikipedia
+-
+diff --git a/interslavic-fun/docs/publications-about-interslavic/pan-slavic-language-projects.mdx b/interslavic-fun/docs/publications-about-interslavic/pan-slavic-language-projects.mdx
+deleted file mode 100644
+index 8ea7e03..0000000
+--- a/interslavic-fun/docs/publications-about-interslavic/pan-slavic-language-projects.mdx
++++ /dev/null
+@@ -1,5 +0,0 @@
+----
+-sidebar_position: 4
+----
+-
+-# Pan-Slavic language projects
+\ No newline at end of file
+diff --git a/interslavic-fun/docs/publications-about-interslavic/publications-about-interslavic.mdx b/interslavic-fun/docs/publications-about-interslavic/publications-about-interslavic.mdx
+deleted file mode 100644
+index 93ea667..0000000
+--- a/interslavic-fun/docs/publications-about-interslavic/publications-about-interslavic.mdx
++++ /dev/null
+@@ -1,6 +0,0 @@
+----
+-sidebar_position: 6
+----
+-
+-# Publikations about Interslavic
+-
+diff --git a/interslavic-fun/docs/vocabulary/_category_.json b/interslavic-fun/docs/vocabulary/_category_.json
+new file mode 100644
+index 0000000..d6533c9
+--- /dev/null
++++ b/interslavic-fun/docs/vocabulary/_category_.json
+@@ -0,0 +1,4 @@
++{
++    "label": "Vocabulary",
++    "position": 6
++  }
+diff --git a/interslavic-fun/docs/use/derivation.md b/interslavic-fun/docs/vocabulary/derivation.mdx
+similarity index 94%
+rename from interslavic-fun/docs/use/derivation.md
+rename to interslavic-fun/docs/vocabulary/derivation.mdx
+index d13cc54..971c7f3 100644
+--- a/interslavic-fun/docs/use/derivation.md
++++ b/interslavic-fun/docs/vocabulary/derivation.mdx
+@@ -1,10 +1,14 @@
+-# Word derivation
++---
++sidebar_position: 2
++---
++
++# Derivation of words
+ 
+ ## Proto-Slavic
+ 
+-Words are based on the living Slavic languages, and when the latter are not in agreement with each other, we basically follow the majority by applying a [voting system](../design-criteria.mdx#vocabulary). To avoid inconsistencies, we have to make sure that words using the same root always use it in the same form. Because all Slavic languages derive their forms from Common Slavic in a fairly predictable way, we never borrow from them directly. Instead, we follow a model for simple derivation from Common Slavic. This makes the language both easier to recognise and easier to use for everybody. Just by reading a few texts, a person will automatically learn quickly how a given sound in his own language is represented in Interslavic.
++Words are based on the living Slavic languages, and when the latter are not in agreement with each other, we basically follow the majority by applying a [voting system](../introduction/design-criteria.mdx#vocabulary). To avoid inconsistencies, we have to make sure that words using the same root always use it in the same form. Because all Slavic languages derive their forms from Common Slavic in a fairly predictable way, we never borrow from them directly. Instead, we follow a model for simple derivation from Common Slavic. This makes the language both easier to recognise and easier to use for everybody. Just by reading a few texts, a person will automatically learn quickly how a given sound in his own language is represented in Interslavic.
+ 
+-The following table shows how various Common Slavic sounds and sequences are dealt with in Interslavic. Please note that in some cases it is possible to distinguish between a North and a South Slavic version (see [flavourisation](flavourisation.md)).
++The following table shows how various Common Slavic sounds and sequences are dealt with in Interslavic. Please note that in some cases it is possible to distinguish between a North and a South Slavic version (see [flavourisation](flavourisation.mdx)).
+ 
+ | Proto-Slavic                       | OCS                              | Slavic                                                                                         |  Interslavic                  | Examples                    |
+ |------------------------------------|----------------------------------|------------------------------------------------------------------------------------------------|-------------------------------|-----------------------------|
+diff --git a/interslavic-fun/docs/use/flavourisation.md b/interslavic-fun/docs/vocabulary/flavourisation.mdx
+similarity index 96%
+rename from interslavic-fun/docs/use/flavourisation.md
+rename to interslavic-fun/docs/vocabulary/flavourisation.mdx
+index aba8e57..fd7d574 100644
+--- a/interslavic-fun/docs/use/flavourisation.md
++++ b/interslavic-fun/docs/vocabulary/flavourisation.mdx
+@@ -1,3 +1,7 @@
++---
++sidebar_position: 3
++---
++
+ # Flavourisation
+ 
+ ## Interslavic dialects
+@@ -15,7 +19,7 @@ It would go way too far to describe every possible flavourised form of Interslav
+ 
+ ## Flavourisation in pronunciation
+ 
+-The base for manipulating Interslavic is the [etymological alphabet](../grammar/orthography.md#etymological-alphabet), a set of optional letters that do not really have a pronunciation of their own, but represent phonemes whose pronunciation varies from one language to another instead. In Interslavic, they can be used to convey additional etymological information, but they can also be used for a different purpose: by writing and/or pronouncing them in a different (non-standard) way, a text can be adapted to be better understood by speakers of a particular group of languages.
++The base for manipulating Interslavic is the [etymological alphabet](../orthography.mdx#etymological-alphabet), a set of optional letters that do not really have a pronunciation of their own, but represent phonemes whose pronunciation varies from one language to another instead. In Interslavic, they can be used to convey additional etymological information, but they can also be used for a different purpose: by writing and/or pronouncing them in a different (non-standard) way, a text can be adapted to be better understood by speakers of a particular group of languages.
+ 
+ The pronunciation of **y** differs from **i** only in Russian, Belarussian, Polish and Sorbian; in the South Slavic languages, in Ukrainian and in spoken Czech and Slovak, it merged with **i**. Thus, if you address an audience of South Slavs only, it is absolutely recommendable to replace all **y** with **i**.
+ 
+diff --git a/interslavic-fun/docs/use/word-formation.md b/interslavic-fun/docs/vocabulary/word-formation.mdx
+similarity index 99%
+rename from interslavic-fun/docs/use/word-formation.md
+rename to interslavic-fun/docs/vocabulary/word-formation.mdx
+index 98e6477..e74e49c 100644
+--- a/interslavic-fun/docs/use/word-formation.md
++++ b/interslavic-fun/docs/vocabulary/word-formation.mdx
+@@ -1,3 +1,7 @@
++---
++sidebar_position: 1
++---
++
+ # Word formation
+ 
+ ## Suffixes
+@@ -70,7 +74,7 @@ Suffixes starting with **\-o-** change to **\-e-** when following a soft consona
+ 
+ #### Adjective to adjective
+ 
+-* For comparatives and superlatives, see under _[adjectives](../grammar/orthography.md#etymological-alphabet)_
++* For comparatives and superlatives, see under _[adjectives](../orthography.mdx#etymological-alphabet)_
+ * To change the meaning of an adjective into the opposite, use the prefix **ne-**:  
+ **dobry** „good” > **nedobry** „not good”
+ * To intensify the meaning of an adjective, the prefix **prě-**, meaning „very” or „too” can be used:  
+diff --git a/interslavic-fun/docusaurus.config.js b/interslavic-fun/docusaurus.config.js
+index 5fab66c..4d7197e 100644
+--- a/interslavic-fun/docusaurus.config.js
++++ b/interslavic-fun/docusaurus.config.js
+@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+ 
+ /** @type {import('@docusaurus/types').Config} */
+ const config = {
+-  title: 'My Site',
+-  tagline: 'Dinosaurs are cool',
++  title: 'Interslavic',
++  tagline: 'Learn Interslavic language',
+   favicon: 'img/favicon.ico',
+ 
+   // Set the production url of your site here
+@@ -65,19 +65,19 @@ const config = {
+       // Replace with your project's social card
+       image: 'img/docusaurus-social-card.jpg',
+       navbar: {
+-        title: 'My Site',
++        title: 'Interslavic',
+         logo: {
+-          alt: 'My Site Logo',
++          alt: 'Interslavic Logo',
+           src: 'img/logo.svg',
+         },
+         items: [
+           {
+             type: 'docSidebar',
+-            sidebarId: 'tutorialSidebar',
++            sidebarId: 'learnSidebar',
+             position: 'left',
+-            label: 'Tutorial',
++            label: 'Learn',
+           },
+-          {to: '/blog', label: 'Blog', position: 'left'},
++          {to: '/blog', label: 'Articles', position: 'left'},
+           {
+             href: 'https://github.com/facebook/docusaurus',
+             label: 'GitHub',
+@@ -92,8 +92,8 @@ const config = {
+             title: 'Docs',
+             items: [
+               {
+-                label: 'Tutorial',
+-                to: '/docs/intro',
++                label: 'Learn',
++                to: '/docs/introduction',
+               },
+             ],
+           },
+diff --git a/interslavic-fun/sidebars.js b/interslavic-fun/sidebars.js
+index 9ab54c2..93b6d9d 100644
+--- a/interslavic-fun/sidebars.js
++++ b/interslavic-fun/sidebars.js
+@@ -14,7 +14,7 @@
+ /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
+ const sidebars = {
+   // By default, Docusaurus generates a sidebar from the docs folder structure
+-  tutorialSidebar: [{type: 'autogenerated', dirName: '.'}],
++  learnSidebar: [{type: 'autogenerated', dirName: '.'}],
+ 
+   // But you can create a sidebar manually
+   /*
+diff --git a/interslavic-fun/src/css/custom.css b/interslavic-fun/src/css/custom.css
+index 2bc6a4c..eb1bfba 100644
+--- a/interslavic-fun/src/css/custom.css
++++ b/interslavic-fun/src/css/custom.css
+@@ -28,3 +28,26 @@
+   --ifm-color-primary-lightest: #4fddbf;
+   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+ }
++
++code {
++  background: initial;
++  border: initial;
++  vertical-align: initial;
++  white-space: pre;
++  /*font: inherit;*/
++  /*font-weight: 600;*/
++  animation: blink 5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
++}
++
++/* Blink animation for text */
++@keyframes blink {
++  0% {
++    opacity: 1;
++  }
++  50% {
++    opacity: 0;
++  }
++  100% {
++    opacity: 1;
++  }
++}
+diff --git a/interslavic-fun/src/pages/index.js b/interslavic-fun/src/pages/index.js
+index affcd90..8a63921 100644
+--- a/interslavic-fun/src/pages/index.js
++++ b/interslavic-fun/src/pages/index.js
+@@ -17,7 +17,7 @@ function HomepageHeader() {
+         <div className={styles.buttons}>
+           <Link
+             className="button button--secondary button--lg"
+-            to="/docs/intro">
++            to="/docs/introduction">
+             Docusaurus Tutorial - 5min ⏱️
+           </Link>
+         </div>
+-- 
+2.37.1 (Apple Git-137.1)
+
