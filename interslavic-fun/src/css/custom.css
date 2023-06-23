@@ -28,3 +28,26 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+code {
+  background: initial;
+  border: initial;
+  vertical-align: initial;
+  white-space: pre;
+  /*font: inherit;*/
+  /*font-weight: 600;*/
+  animation: blink 5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+/* Blink animation for text */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
