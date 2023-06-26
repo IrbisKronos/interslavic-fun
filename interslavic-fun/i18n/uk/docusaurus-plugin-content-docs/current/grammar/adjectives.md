@@ -6,5 +6,3 @@ origin: http://steen.free.fr/interslavic/adjectives.html
 ---
 
 # Adjectives
-
-Gtht
