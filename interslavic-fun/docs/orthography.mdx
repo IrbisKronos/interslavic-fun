@@ -8,6 +8,7 @@ origin: http://steen.free.fr/interslavic/orthography.html
 import Alphabet from './partials/_alphabet.mdx';
 import LatinAlphabet from './partials/_latin-alphabet.mdx';
 import CyrillicAlphabet from './partials/_cyrillic-alphabet.mdx';
+import DisappearedPhonemes from './partials/_disappeared-phonemes.mdx';
 
 # Orthography
 
@@ -17,7 +18,7 @@ The question how Interslavic should be written has always been subject to discus
 
 Since the border between Latin and Cyrillic runs straight through the middle of Slavic territory, Interslavic has standard alphabets for both. Neither of them is based on any national orthography in particular. Instead, they were designed as a compromise, intended to be intuitively understandable and to enable easy transliteration between them. Users are strongly encouraged to use these standard alphabets, but those who have problems writing certain characters are offered some [alternative solutions](#representation), too.
 
-The **Interslavic Latin alphabet** uses 27 letters: 23 letters from the base Latin alphabet (all except **`q`**, **`w`** and **`x`**) plus four consonants with a haček (**`š`**, **`ž`**, **`č`** and **`ě`**), as well as three digraphs (**`dž`**, **`lj`**, **`nj`**):
+The **Interslavic Latin alphabet** uses 27 letters: 23 letters from the base Latin alphabet (all except **`q`**, **`w`** and **`x`**) plus four consonants with a `haček` (**`š`**, **`ž`**, **`č`** and **`ě`**), as well as three digraphs (**`dž`**, **`lj`**, **`nj`**):
 
 <LatinAlphabet />
 
@@ -37,9 +38,9 @@ As noted above, both the Latin and Cyrillic alphabets include characters that ca
 
 ### Latin `Č` `Š` `Ž`
 
-These letters are very important in Slavic. Leaving out the haček (as is often done by native speakers in SMS language) has a negative impact on the understandability of Interslavic, because **`c` `s` `z`** are entirely different phonemes.
+These letters are very important in Slavic. Leaving out the `haček` (as is often done by native speakers in SMS language) has a negative impact on the understandability of Interslavic, because **`c` `s` `z`** are entirely different phonemes.
 
-Because Poles do not have the letters on their keyboard, the suggested alternative for them is **cz sz ż**. Those who do not have **ż** on their keyboard either can use **`cz` `sz` `zs`** instead. An alternative solution is **`cx` `sx` `zx`**, which has the advantage of being consistent and unambiguous, but the disadvantage of being unnatural (and in the eyes of many people, ugly). Other options are better avoided. For example, English-based **`ch` `sh` `zh`** has the disadvantage that West Slavs would read **`ch`** as **`h`** \[x\], while solutions involving non-letter characters (like **c^**, **c\***, **c'**) make it look like computer code. At last, do not use characters like **q** or **w** (the so-called _Volapük encoding_) as substitutes, as this would only create confusion.
+Because Poles do not have the letters on their keyboard, the suggested alternative for them is **`cz sz ż`**. Those who do not have **`ż`** on their keyboard either can use **`cz` `sz` `zs`** instead. An alternative solution is **`cx` `sx` `zx`**, which has the advantage of being consistent and unambiguous, but the disadvantage of being unnatural (and in the eyes of many people, ugly). Other options are better avoided. For example, English-based **`ch` `sh` `zh`** has the disadvantage that West Slavs would read **`ch`** as **`h`** \[x\], while solutions involving non-letter characters (like **`c^`**, **`c`\***, **`c'`**) make it look like computer code. At last, do not use characters like **`q`** or **`w`** (the so-called _`Volapük encoding`_) as substitutes, as this would only create confusion.
 
 ### Latin `Ě` and Cyrillic `Є`
 
@@ -72,11 +73,10 @@ The Cyrillic counterparts of **`lj`** and **`nj`** are **`љ`** and **`њ`**, ta
 
 In addition to the standard Latin alphabet, Interslavic also contains a number of optional letters that refer specifically to Proto-Slavic/Old Church Slavonic phonemes that have diverged or disappeared in most modern languages:
 
-| Ę Ų Å Ė Ȯ   Ć Đ   Ĺ Ń Ŕ T́ D́ Ś Ź |
-|:----------------------:|
+<DisappearedPhonemes />
 
 *   The vowels **`ę`** and **`ų`** match the nasal vowels **`ѧ`** and **`ѫ`** in Old Church Slavonic (little yus and big yus respectively, usually transliterated as **`ę`** and **`ǫ`**).
-*   The vowel **å** occurs in the combinations **`rå`** and **`lå`** followed by a consonant, where Polish has **`ro`/`ró`** and **`ło`/`łó`** and East Slavic has **(`o`)`ro`** and **(`o`)`lo`**.
+*   The vowel **`å`** occurs in the combinations **`rå`** and **`lå`** followed by a consonant, where Polish has **`ro`/`ró`** and **`ło`/`łó`** and East Slavic has **(`o`)`ro`** and **(`o`)`lo`**.
 *   The vowels **`ė`** and **`ȯ`** represent strong yers: **`ь`** (**`ĭ`**) and **`ъ`** (**`ŭ`**).
 *   The consonants **`ć`** and **`đ`** refer to Proto-Slavic **`tj`** and **`dj`**, which in Old Church Slavonic became **`щ`** (**`št`**) and **`жд`** (**`žd`**).
 *   The soft consonants **`ĺ` `ń` `ŕ` `t́` `d́` `ś` `ź`** refer to consonants followed by a weak **`ь`**.
@@ -93,7 +93,7 @@ The basic Latin and Cyrillic alphabets of Interslavic consist of letters whose p
 
 In contrast to alphabets such as the International Phonetic Alphabet and the [Slavistic Alphabet](http://grzegorz.jagodzinski.prv.pl/gram/en/ipa.html), this orthography is not meant to give information about the pronunciation of individual languages, but to show the relationship between them. It can be compared to the orthography of English: although there are vast differences in pronunciation between British English, Scottish English and American English, all are written in practically the same way, using spelling conventions that represent the spoken language of the 14th century. If the Slavs would use a similar alphabet instead of their pronunciation-based national orthographies, the word for „five” could be written as _`pęt́`_ in all Slavic languages, instead of _`пять`_, _`pięć`_, _`piãc`_, _`pjeć`_, _`pět`_, _`päť`_, _`pet`_ etc.
 
-This etymology-based alphabet (previously known as _Naučny medžuslovjansky_ „Scientific Interslavic”) also serves as the source code for Interslavic. It was designed in such way that it differs from standard Interslavic only by additional diacritics, so that a reader who is unfamiliar with those diacritics can simply ignore them. Using this orthography in Interslavic can serve the following purposes:
+This etymology-based alphabet (previously known as _`Naučny medžuslovjansky`_ „Scientific Interslavic”) also serves as the source code for Interslavic. It was designed in such way that it differs from standard Interslavic only by additional diacritics, so that a reader who is unfamiliar with those diacritics can simply ignore them. Using this orthography in Interslavic can serve the following purposes:
 
 *   conveying etymological information,
 *   supporting the learning process by making Interslavic words easier to link to their counterparts in other Slavic languages,
