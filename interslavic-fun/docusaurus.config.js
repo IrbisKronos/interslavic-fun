@@ -30,17 +30,25 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'uk'],
-    localeConfigs: {
-      en: {
-        label: "EN",
-        htmlLang: 'en-GB',
-      },
-      uk: {
-        label: 'UA',
-        htmlLang: 'uk',
-      },
-    },
+    locales: [
+      'en',
+      // 'ru',
+      // 'ru-petr1708',
+      // 'be',
+      // 'be-tarask',
+      // 'uk',
+      // 'uk-Latn',
+      // 'pl',
+      // 'sk',
+      // 'cs',
+      // 'sl',
+      // 'hr',
+      // 'bs',
+      // 'sr-Cyrl',
+      // 'mk',
+      // 'bg',
+      // 'bg-ivanchov',
+    ],
   },
 
   presets: [
